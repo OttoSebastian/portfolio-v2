@@ -23,7 +23,7 @@ p {
   box-sizing: border-box;
   padding: 10px;
   top: 100px;
-  background-color: white;
+  background-color: rgb(236, 236, 236);
   transition: ease-in-out 0.3s;
   overflow: hidden;
   top: 0;
@@ -72,7 +72,7 @@ p {
   height: 35px;
   flex-shrink: 0;
   padding-right: 10px;
-  color: black;
+  color: navy;
 }
 .text {
   color: black;
@@ -126,4 +126,64 @@ p {
 .aboutText {
   margin-top: 8rem;
   font-size: 1.4rem;
+}
+.socials {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: navy;
+}
+
+/* IT skills */
+.itSkillsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.skillsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: navy;
+  font-size: 2.5rem;
+  max-width: 40%;
+}
+.skillsContent {
+  margin-top: 5rem;
+  width: 75%;
+  display: flex;
+  gap: 5rem;
+}
+
+/* Skill Card */
+.skillCard {
+  width: 30%;
+  padding: 0.5rem;
+  background-color: rgb(236, 236, 236);
+  transition: transform 0.3s ease;
+}
+.skillCard:hover {
+  transform: translateY(-10px);
+}
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-bottom: 0.5rem solid navy;
+}
+.cardBody {
+  font-family: louis;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

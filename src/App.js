@@ -4,14 +4,13 @@ import AboutMe from './components/AboutMe';
 //Components
 import MainHeader from './components/MainHeader';
 import SideBar from './components/SideBar';
+import ItSkills from './components/ItSkills';
 
 function App() {
 
   //References
   const topRef = useRef();
   const aboutRef = useRef();
-  const educationRef = useRef();
-  const workRef = useRef();
   const projectsRef = useRef();
   const itRef = useRef();
   const footerRef = useRef();
@@ -23,17 +22,11 @@ function App() {
   const handleGoToAboutMe = () => {
     aboutRef.current.scrollIntoView({behavior: "smooth"});
   }
-  const handleGoToEducation = () => {
-    educationRef.current.scrollIntoView({behavior: "smooth"});
-  }
-  const handleGoToWork = () => {
-    workRef.current.scrollIntoView({behavior: "smooth"});
+  const handleGoToIT = () => {
+    itRef.current.scrollIntoView({behavior: "smooth"});
   }
   const handleGoToProjects = () => {
     projectsRef.current.scrollIntoView({behavior: "smooth"});
-  }
-  const handleGoToIT = () => {
-    itRef.current.scrollIntoView({behavior: "smooth"});
   }
   const handleGoToFooter = () => {
     footerRef.current.scrollIntoView({behavior: "smooth"});
@@ -43,15 +36,14 @@ function App() {
     <>
       <SideBar
         clickEvent1={handleGoToTop} 
-        clickEvent2={handleGoToAboutMe} 
-        clickEvent3={handleGoToEducation} 
-        clickEvent4={handleGoToWork} 
-        clickEvent5={handleGoToProjects} 
-        clickEvent6={handleGoToIT}
-        clickEvent7={handleGoToFooter}
+        clickEvent2={handleGoToAboutMe}
+        clickEvent3={handleGoToIT}
+        clickEvent4={handleGoToProjects} 
+        clickEvent5={handleGoToFooter}
       />
       <MainHeader refer={topRef}/>
       <AboutMe refer={aboutRef}/>
+      <ItSkills refer={itRef}/>
     </>
   );
 }

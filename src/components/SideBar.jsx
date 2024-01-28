@@ -1,16 +1,14 @@
 import React from 'react';
-import { IoHome, IoSchoolOutline, IoGridOutline, IoCodeSlashOutline, IoPersonOutline } from "react-icons/io5";
+//Icons
+import { IoHome, IoGridOutline, IoCodeSlashOutline, IoPersonOutline } from "react-icons/io5";
 import { AiOutlineInfo } from "react-icons/ai";
-import { MdOutlineWorkOutline } from "react-icons/md";
 
 export default function NavigationBar({
   clickEvent1, 
   clickEvent2, 
   clickEvent3, 
   clickEvent4, 
-  clickEvent5, 
-  clickEvent6, 
-  clickEvent7
+  clickEvent5
 }) {
 
   //Click handlers
@@ -29,12 +27,6 @@ export default function NavigationBar({
   const section5 = () => {
     clickEvent5();
   };
-  const section6 = () => {
-    clickEvent6();
-  };
-  const section7 = () => {
-    clickEvent7();
-  };
 
   return (
     <div className='sidebar'>
@@ -48,22 +40,14 @@ export default function NavigationBar({
         <div className='text'>About me</div>
       </div>
       <div className='item' onClick={section3}>
-        <IoSchoolOutline  class="icon"/>
-        <div className='text'>Education</div>
+        <IoCodeSlashOutline class="icon"/>
+        <div className='text'>Skills</div>
       </div>
       <div className='item' onClick={section4}>
-        <MdOutlineWorkOutline class="icon"/>
-        <div className='text'>Work</div>
-      </div>
-      <div className='item' onClick={section5}>
         <IoGridOutline class="icon"/>
         <div className='text'>Projects</div>
       </div>
-      <div className='item' onClick={section6}>
-        <IoCodeSlashOutline class="icon"/>
-        <div className='text'>IT skills</div>
-      </div>
-      <div className='item' onClick={section7}>
+      <div className='item' onClick={section5}>
         <IoPersonOutline  class="icon"/>
         <div className='text'>Personal</div>
       </div>

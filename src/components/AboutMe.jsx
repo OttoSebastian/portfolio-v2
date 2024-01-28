@@ -1,4 +1,8 @@
 import React from 'react';
+//Icons
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from "react-icons/io5";
+import { RiInstagramFill } from "react-icons/ri";
+//Picture
 import pic from '../images/omakuva_tasattu.jpeg';
 
 const wordHighlight = {
@@ -31,6 +35,11 @@ export default function AboutMe({refer}) {
       </div>
       <div className='about-right'>
         <img src={pic} style={imageStyle}/>
+        <div className='socials'>
+          <RiInstagramFill style={{cursor: "pointer"}} onClick={() => {window.open('https://www.instagram.com/otto_sebastian/', '_blank')}}/>
+          <IoLogoLinkedin style={{cursor: "pointer"}} onClick={() => {window.open('https://www.linkedin.com/in/otto-hyyrynen-267692265', '_blank')}}/>
+          <IoLogoFacebook style={{cursor: "pointer"}} onClick={() => {window.open('https://www.facebook.com/od.hyyrynen', '_blank')}}/>
+        </div>
       </div>
     </div>
   );
