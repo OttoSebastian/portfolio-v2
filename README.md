@@ -1,3 +1,3 @@
 # portfolio-v2
 
-This is a much more improved version of the portfolio I had finished earlier. This project is still under work!
+Webpage about myself, my skills and projects. The first version is now finsihed. The idea was to create a clean and minimalistic design for my own website using React.
