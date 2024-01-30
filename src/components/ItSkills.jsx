@@ -11,12 +11,14 @@ import SkillCard from '../page-components/SkillCard'
 export default function ItSkills({refer}) {
   return (
     <div className='itSkillsDiv' ref={refer}>
-      <div className='skillsHeader'>
+      <div className='contentHeader'>
         <h1>What skills do I offer?</h1>
         <p style={{fontSize: "1.4rem", color: "black"}}>
           Here are some of my skills in IT and programming. These skills include programming languages, different softwares, systems etc. 
           Mainly these skills have been learned during my studies at LAB, but I'm motivated to grow my skill set on my free time aswell. 
-          An example of this is my interest in Udemy's programming courses. So far I've completed one Udemy course on React, but I'm planning to complete more in the future.
+          An example of this is my interest in Udemy's programming courses. So far I've completed one Udemy course on React, but I'm planning to complete more in the future. <br /><br />
+          In addition to my programming skills, I possess knowledge in agile software development and data-analytics. Also Kanban-styled structure of task-management 
+          has played a key part in my projects. In my studies I've included courses on Lean and Six Sigma (Yellow Belt) aswell.
         </p>
       </div>
       <div className='skillsContent'>

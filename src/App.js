@@ -5,6 +5,8 @@ import AboutMe from './components/AboutMe';
 import MainHeader from './components/MainHeader';
 import SideBar from './components/SideBar';
 import ItSkills from './components/ItSkills';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
       <MainHeader refer={topRef}/>
       <AboutMe refer={aboutRef}/>
       <ItSkills refer={itRef}/>
+      <Projects refer={projectsRef}/>
+      <Footer refer={footerRef}/>
     </>
   );
 }
