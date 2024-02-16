@@ -1,7 +1,7 @@
 import React from 'react';
 //Icons
 import { FaWindows, FaRobot, FaHtml5, FaReact } from "react-icons/fa";
-import { SiVisualstudiocode, SiCsharp } from "react-icons/si";
+import { SiVisualstudiocode, SiCsharp, SiTypescript } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaDatabase } from "react-icons/fa6";
@@ -37,7 +37,7 @@ export default function ItSkills({refer}) {
           Basic structure of webpages has become very familiar with HTML and using it, for example in JavaScript projects is fluent.
         </SkillCard>
         <SkillCard icon={<IoLogoCss3/>} header='CSS'>
-          CSS is a part of every project and I've planned to take a course about Bootstrap CSS to deepen my understanding in CSS.
+          CSS is a part of every project and I'm currently studying a course about Tailwind CSS to deepen my understanding in CSS.
         </SkillCard>
         <SkillCard icon={<SiCsharp/>} header='C#'>
           In C# I've got experience on creating object-oriented projects. Even tho C# isn't my main point of focus at the moment, I really enjoyed working with it.
@@ -52,6 +52,11 @@ export default function ItSkills({refer}) {
         </SkillCard>
         <SkillCard icon={<FaDatabase/>} header='MySQL'>
           There hasn't been much backend focused content in my studies, but MySQL was used on some of my school projects. Basic knowledge of datatables and queries.
+        </SkillCard>
+      </div>
+      <div className='skillsContent'>
+        <SkillCard icon={<SiTypescript/>} header='TypeScript'>
+          I've completed a Udemy course about TypeScript. During the course the basics of TypeScript became familiar and I'm planning to do a project with TS soon.
         </SkillCard>
       </div>
     </div>

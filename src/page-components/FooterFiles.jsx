@@ -4,7 +4,7 @@ import { FaRegFileAlt, FaGithub } from "react-icons/fa";
 import { PiCertificateBold } from "react-icons/pi";
 //Files
 import CV from "../personal-files/cv.pdf";
-import Certificate from '../personal-files/react_certificate.pdf';
+import Certificate from '../personal-files/certificates.pdf';
 
 export default function FooterFiles() {
 
@@ -31,7 +31,7 @@ export default function FooterFiles() {
         </div>
         <div className='footerItem' onClick={openCertificate}>
           <i className='footerIcon' style={{cursor: "pointer"}}>{<PiCertificateBold/>}</i>
-          <p className='footerText' style={{cursor: "pointer"}}>Udemy's React certificate (.pdf)</p>
+          <p className='footerText' style={{cursor: "pointer"}}>Udemy certificates (.pdf)</p>
         </div>
         <div className='footerItem'>
           <i className='footerIcon'>{<FaRegFileAlt/>}</i>
