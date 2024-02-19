@@ -6,15 +6,16 @@ const headerStyle = {
   marginBottom: "1rem"
 }
 const iconStyle = {
-  fontSize: "3rem",
-  color: "navy"
+  width: "5rem",
+  color: "navy",
+  padding: "0.5rem"
 }
 
 export default function SkillCard({icon, header="Header...", children}) {
   return (
     <div className='skillCard'>
       <div className='cardHeader'>
-        <span style={iconStyle}>{icon}</span>
+        <img src={icon} alt='icon' style={iconStyle}/>
       </div>
       <div className='cardBody'>
         <span style={headerStyle}>{header}</span>
