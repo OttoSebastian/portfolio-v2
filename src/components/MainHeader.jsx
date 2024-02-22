@@ -31,7 +31,7 @@ export default function MainHeader({refer}) {
     <div style={videoBackgroundStyle} ref={refer}>
         <video autoPlay loop muted playsInline style={videoStyle}>
           <source src={waves} type="video/mp4" />
-        </video>
+        </video> 
         <div style={headerContainer}>
             <h1 style={{fontSize: '30rem'}}>Otto Sebastian</h1>
         </div>

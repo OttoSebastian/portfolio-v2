@@ -10,6 +10,7 @@ import JavaScript from "../images/javascript.svg";
 import ReactJS from "../images/reactjs.svg";
 import Database from "../images/database.svg";
 import TypeScript from "../images/typescript.svg";
+import Tailwind from "../images/tailwind.svg";
 //Components
 import SkillCard from '../page-components/SkillCard'
 
@@ -21,7 +22,8 @@ export default function ItSkills({refer}) {
         <p style={{fontSize: "1.4rem", color: "black"}}>
           Here are some of my skills in IT and programming. These skills include programming languages, different softwares, systems etc. 
           Mainly these skills have been learned during my studies at LAB, but I'm motivated to grow my skill set on my free time aswell. 
-          An example of this is my interest in Udemy's programming courses. So far I've completed two Udemy courses on React and TypeScript but I'm working on course in Tailwind CSS aswell. <br /><br />
+          An example of this is my interest in Udemy's programming courses. So far I've completed three Udemy courses on React, TypeScript and Tailwind CSS. 
+          Certificates of all those courses can be found at the bottom of the page. <br /><br />
           In addition to my programming skills, I possess knowledge in agile software development and data-analytics. Also Kanban-styled structure of task-management 
           has played a key part in my projects. In my studies I've included courses on Lean and Six Sigma (Yellow Belt) aswell.
         </p>
@@ -62,6 +64,9 @@ export default function ItSkills({refer}) {
       <div className='skillsContent'>
         <SkillCard icon={TypeScript} header='TypeScript'>
           I've completed a Udemy course about TypeScript. During the course the basics of TypeScript became familiar and I'm planning to do a project with TS soon.
+        </SkillCard>
+        <SkillCard icon={Tailwind} header='Tailwind'>
+          I've completed a Udemy course about Tailwind CSS. During the course I was working with Tailwind in a React application.
         </SkillCard>
       </div>
     </div>
