@@ -63,7 +63,7 @@ export default function ItSkills({refer}) {
       </div>
       <div className='skillsContent'>
         <SkillCard icon={TypeScript} header='TypeScript'>
-          I've completed a Udemy course about TypeScript. During the course the basics of TypeScript became familiar and I'm planning to do a project with TS soon.
+          I've completed a Udemy course about TypeScript. During the course the basics and working with TypeScript became familiar.
         </SkillCard>
         <SkillCard icon={Tailwind} header='Tailwind'>
           I've completed a Udemy course about Tailwind CSS. During the course I was working with Tailwind in a React application.
